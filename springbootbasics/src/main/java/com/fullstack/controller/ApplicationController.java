@@ -24,4 +24,11 @@ public class ApplicationController {
         return ResponseEntity.ok("Contact US at Full Stack Java Developer, Pune \n" +
                 "Office: +91 7887575991 / 020 4721 2644");
     }
+
+
+
+    @GetMapping("/address")
+    public ResponseEntity<String> sayAddress(){
+        return ResponseEntity.ok("Inspiria Mall, Pune, India");
+    }
 }
